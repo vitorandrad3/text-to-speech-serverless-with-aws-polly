@@ -1,0 +1,57 @@
+service: sprint06-project
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.9
+
+functions:
+  health:
+    handler: src.services.template.handler.health
+    events:
+      - httpApi:
+          path: /
+          method: get
+  v1Description:
+    handler: src.services.template.handler.v1_description
+    events:
+      - httpApi:
+          path: /v1
+          method: get
+  v2Description:
+    handler: src.services.template.handler.v2_description
+    events:
+      - httpApi:
+          path: /v2
+          method: get
+  v1TTS:
+    handler: src.services.v1_tts.handler.v1_tts_lambda
+    events:
+      - httpApi:
+          path: /v1/tts
+          method: post
+  v2TTS:
+    handler: src.services.v2_tts.handler.v2_tts_lambda
+    events:
+      - httpApi:
+          path: /v2/tts
+          method: post
+  v3TTS:
+    handler: src.services.v3_tts.handler.v3_tts_lambda
+    events:
+      - httpApi:
+          path: /v3/tts
+          method: post
+
+plugins:
+  - serverless-python-requirements
+
+custom:
+  pythonRequirements:
+     dockerizePip: true
+
+package:
+  exclude:
+    - ./**
+  include:
+    - src/**
