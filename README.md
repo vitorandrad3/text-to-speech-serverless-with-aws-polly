@@ -157,16 +157,18 @@ resposta:
 A arquitetura do projeto é dividia em cada endpoint gerado pelo deploy da aplicação
 
 ### Rota /v1/tts:
-![arquitetura_v1](https://github.com/Compass-pb-aws-2023-FATEC/sprint-6-pb-aws-fatec/assets/93358971/f217111d-3800-40bc-aa6c-0d6e1a86d959)
+![1](https://github.com/vitorandrad3/text-to-speech-api-with-aws-polly/assets/121817324/2de80f68-2fbb-4eb0-83de-18b8fbebc290)
+
 
 ### Rota /v2/tts
-![arquitetura_v2](https://github.com/Compass-pb-aws-2023-FATEC/sprint-6-pb-aws-fatec/assets/93358971/8f287157-3650-4e37-82c0-cd2537e5c28a)
 
+![2](https://github.com/vitorandrad3/text-to-speech-api-with-aws-polly/assets/121817324/50fd78ae-d72b-4d55-bed9-bc7ba5e70540)
 
 ### Rota /v3/tts
-![arquitetura_v3](https://github.com/Compass-pb-aws-2023-FATEC/sprint-6-pb-aws-fatec/assets/93358971/d3d14647-d55e-4489-8b18-1e9deeaedba2)
+![3](https://github.com/vitorandrad3/text-to-speech-api-with-aws-polly/assets/121817324/03267789-166a-4d5a-9bee-b16176237225)
+
 
 ## Testes de unidade <a name="testes-de-unidade"></a>
 Foram elaborados testes de unidade no nosso projeto usando a biblioteca ***pytest***, visando elevar a qualidade do código desenvolvido. Os testes apresentaram um *coverage* de 96%.
 
-![pytest_coverage](https://github.com/Compass-pb-aws-2023-FATEC/sprint-6-pb-aws-fatec/assets/93358971/15a3d408-9a83-4211-b1b0-04751c93cd57)
+![4](https://github.com/vitorandrad3/text-to-speech-api-with-aws-polly/assets/121817324/1fbb422d-706f-4b2a-abba-d4281801ff5c)
